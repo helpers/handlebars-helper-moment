@@ -1,0 +1,14 @@
+; EditorConfig is awesome: http://EditorConfig.org
+
+; top-most EditorConfig file
+root = true
+
+; 2 space indentation for YAML files
+[*.yml]
+indent_style = space
+indent_size = 2
+
+; Tab indentation, with 2 space width
+[*.js,*.html,*.hbs]
+indent_style = tab
+indent_size = 2

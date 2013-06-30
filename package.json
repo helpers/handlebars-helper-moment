@@ -1,0 +1,18 @@
+{
+  "name": "assemble-handlebars-momentjs",
+  "version": "0.0.1",
+  "description": "Combines the powers of Assemble, Handlebars.js and Moment.js into a great helper to master time.",
+  "homepage": "https://github.com/Arkkimaagi/assemble-handlebars-momentjs",
+  "repository": "https://github.com/Arkkimaagi/assemble-handlebars-momentjs",
+  "author": "Mikko Tapionlinna",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "assemble": "~0.4.0",
+    "moment": "~2.0.0",
+    "lodash": "~1.3.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0"
+  }
+}
