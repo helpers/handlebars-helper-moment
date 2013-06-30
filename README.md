@@ -216,7 +216,7 @@ The event will last {{duration duration humanize=null}}
 The event will last 3 hours
 ```
 
-The moment.js has plenty of features and these examples are just the tip of the iceberg of what moment.js can do. Just remember, in ```1372599296770``` means ```moment().method()``` and ```1372599296770``` means ```moment(somedate).method("something")```. Also, the handlebars syntax does not let you pass some values (like arrays and objects) directly from the tag, so you may need to use the yaml frontmatter to run those.
+The moment.js has plenty of features and these examples are just the tip of the iceberg of what moment.js can do. Just remember, ```{{moment method=null}}```  means ```moment().method()``` and ```{{moment somedate method="something"}}``` means ```moment(somedate).method("something")```. Also, the handlebars syntax does not let you pass some values (like arrays and objects) directly from the tag, so you may need to use the yaml frontmatter to run those.
 
 ## Copyright and license
 Copyright 2013 Mikko Tapionlinna
