@@ -120,7 +120,7 @@ Specific datetime with formatting, converted to utc
 Saturday, 29 June 2013 22:53:23 +0000
 ```
 
-Getters and setters, example: get week of year, depends on lang (see (moment.js)[http://momentjs.com/docs/#/get-set/] documentation for more details)
+Getters and setters, example: get week of year, depends on lang (see [moment.js](http://momentjs.com/docs/#/get-set/) documentation for more details)
 ```
 The week number in Finland is {{moment sampledate lang="fi" week=null}}
 ```
@@ -128,7 +128,7 @@ The week number in Finland is {{moment sampledate lang="fi" week=null}}
 The week number in Finland is 26
 ```
 
-Manipulate, example: add days, (see (moment.js)[http://momentjs.com/docs/#/manipulating/] documentation for more details)
+Manipulate, example: add days, (see [moment.js](http://momentjs.com/docs/#/manipulating/) documentation for more details)
 ```
 {{moment sampledate format="dddd"}}-{{moment sampledate add=daysadd format="dddd"}}
 ```
@@ -136,7 +136,7 @@ Manipulate, example: add days, (see (moment.js)[http://momentjs.com/docs/#/manip
 Sunday-Friday
 ```
 
-Manipulate, example: subtract years, (see (moment.js)[http://momentjs.com/docs/#/manipulating/] documentation for more details)
+Manipulate, example: subtract years, (see [moment.js](http://momentjs.com/docs/#/manipulating/) documentation for more details)
 ```
 {{moment sampledate subtract=fiveyearsago format="YYYY"}}-{{moment sampledate format="YYYY"}}
 ```
@@ -144,7 +144,7 @@ Manipulate, example: subtract years, (see (moment.js)[http://momentjs.com/docs/#
 2008-2013
 ```
 
-Manipulate, example: startOf month, (see (moment.js)[http://momentjs.com/docs/#/manipulating/] documentation for more details)
+Manipulate, example: startOf month, (see [moment.js](http://momentjs.com/docs/#/manipulating/) documentation for more details)
 ```
 {{moment sampledate startOf="month" format="dddd, DD MMMM YYYY HH:mm:ss ZZ"}}
 ```
@@ -152,7 +152,7 @@ Manipulate, example: startOf month, (see (moment.js)[http://momentjs.com/docs/#/
 Saturday, 01 June 2013 00:00:00 +0300
 ```
 
-Manipulate, example: endOf week, (see (moment.js)[http://momentjs.com/docs/#/manipulating/] documentation for more details)
+Manipulate, example: endOf week, (see [moment.js](http://momentjs.com/docs/#/manipulating/) documentation for more details)
 ```
 {{moment sampledate endOf="week" format="dddd, DD MMMM YYYY HH:mm:ss ZZ"}}
 ```
