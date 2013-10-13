@@ -1,96 +1,55 @@
-/*global module:false*/
-/*jshint node:true */
+/*
+ * Handlebars Helper: Moment.js 
+ * Built for Assemble: the static site generator and 
+ * component builder for Node.js, Grunt.js and Yeoman.
+ * http://assemble.io
+ *
+ * Copyright (c) 2013, Upstage
+ * Licensed under the MIT license.
+ */
 'use strict';
 
 module.exports = function(grunt) {
 
-	// Load all grunt tasks
-	//require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-	grunt.loadNpmTasks('assemble');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
+  // Project configuration.
+  grunt.initConfig({
 
+    jshint: {
+      options: {
+        curly: true,
+        eqeqeq: true,
+        immed: true,
+        latedef: true,
+        newcap: true,
+        noarg: true,
+        sub: true,
+        undef: true,
+        boss: true,
+        eqnull: true,
+        node: true
+      },
+      all: {
+        src: ['moment.js', 'Gruntfile.js']
+      }
+    },
 
-//--------------------------------------------------------------------------------------------------
+    assemble: {
+      options: {
+        flatten: true,
+        helpers: ['moment.js'],
+        layout: 'src/layout.hbs'
+      },
+      examples: {
+        src: ['src/examples.hbs'],
+        dest: './examples/'
+      }
+    }
+  });
 
-	var conf = {
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-readme');
+  grunt.loadNpmTasks('assemble');
 
-		// Is this really needed?
-		pkg: grunt.file.readJSON('package.json'),
-		is_live: false,
-
-		//Assemble files from .hbs -contentfiles, based on data, layouts and partials
-		assemble:{
-			options:{
-				assets:'build/',
-				data:['src/__assemble/data/**/*.{json,yml}'],
-				ext:'',
-				helpers:'src/__assemble/helpers/*.js',
-				layout:'default.hbs',
-				layoutdir:'src/__assemble/layouts/',
-				partials:['src/__assemble/partials/**/*.hbs'],
-				removeHbsWhitespace: true
-			},
-			hbs:{
-				files:[
-					{
-						expand:true,
-						cwd:'src/',
-						src:['**/*.hbs','!_{_assemble,script,style}/**/*'],
-						dest:'build/'
-					}
-				]
-			}
-		},
-
-		//Check syntax of JavaScript
-		jshint: {
-			options: {
-				jshintrc: '.jshintrc'
-			},
-			hbshelpers: {
-				files: {src:['src/__assemble/helpers/*.js']}
-			},
-			gruntfile: {
-				files: {src:['Gruntfile.js']}
-			}
-		},
-
-		//Clean the structure, so that everything can be generated from scratch
-		clean: {
-			build: {
-				files:[
-					{
-						src: ['build/*']
-					}
-				]
-			}
-		}
-
-	};
-
-//--------------------------------------------------------------------------------------------------
-
-	// Project configuration.
-	grunt.initConfig(conf);
-
-
-	grunt.registerTask('validate', [
-		'jshint'
-	]);
-
-	grunt.registerTask('build', [
-		'assemble'
-	]);
-
-	grunt.registerTask('default', [
-		'validate',
-		'build'
-	]);
-
-	grunt.registerTask('rebuild', [
-		'clean:build',
-		'default'
-	]);
-
+  grunt.registerTask('default', ['jshint', 'assemble', 'readme']);
 };
