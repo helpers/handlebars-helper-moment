@@ -27,3 +27,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ***
 
 _This file was generated on {%= grunt.template.date("fullDate") %}._
+
+[moment]: http://momentjs.com/docs/ "Moment.js"
+[grunt]: http://gruntjs.com "Grunt.js"

@@ -1,4 +1,6 @@
-YAML front matter is not required, but we'll use it hear to supply our example data for purposes of demonstration:
+## Optional YAML Front Matter
+
+> YAML front matter is not required, but we'll use it hear to supply our example data for purposes of demonstration:
 
 ```handlebars
 ---
