@@ -22,14 +22,22 @@ assemble: {
 
 
 ## Options
-The moment.js lib has plenty of features and options, these examples are just the tip of the iceberg of what [moment.js](http://momentjs.com/docs/) can do.
+The moment.js lib has plenty of features and options, these examples are just the tip of the iceberg of what [moment.js][moment] can do.
 
-As a tip, remember that `\{{moment method=null}}`  means `moment().method()` and `\{{moment somedate method="something"}}` means `moment(somedate).method("something")`. Also, the handlebars syntax does not let you pass some values (like arrays and objects) directly from the tag, so you may need to use the yaml frontmatter to run those.
+#### Tips
+Remember that:
+
+* `\{{moment method=null}}` means `moment().method()`, and 
+* `\{{moment somedate method="something"}}` means `moment(somedate).method("something")`. 
+
+Also, the handlebars syntax does not allow you pass certain values (like arrays and objects) directly from the tag, so you may need to use YAML frontmatter or supply JSON/YAML data to run those.
 
 
 
 ## Usage Examples
-YAML front matter is not required, but we'll use it hear to supply our example data for purposes of demonstration:
+### Optional YAML Front Matter
+
+> YAML front matter is not required, but we'll use it hear to supply our example data for purposes of demonstration:
 
 ```handlebars
 ---
@@ -341,3 +349,6 @@ Released under the MIT license
 ***
 
 _This file was generated on Sunday, October 13, 2013._
+
+[moment]: http://momentjs.com/docs/ "Moment.js"
+[grunt]: http://gruntjs.com "Grunt.js"
