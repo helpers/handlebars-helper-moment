@@ -1,5 +1,6 @@
 /*
  * Handlebars Helper: Moment.js 
+ * @author: https://github.com/Arkkimaagi
  * Built for Assemble: the static site generator and 
  * component builder for Node.js, Grunt.js and Yeoman.
  * http://assemble.io
@@ -7,6 +8,7 @@
  * Copyright (c) 2013, Upstage
  * Licensed under the MIT license.
  */
+
 'use strict';
 
 module.exports = function(grunt) {
