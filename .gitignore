@@ -2,7 +2,7 @@
 
 ### SublimeText ###
 # SublimeText project files
-*.sublime-workspace
+*.sublime-*
 
 ### OSX ###
 .DS_Store
@@ -42,6 +42,7 @@ lib-cov
 pids
 logs
 results
+tmp
 
 npm-debug.log
 node_modules
