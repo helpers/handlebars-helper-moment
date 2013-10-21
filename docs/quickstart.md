@@ -1,7 +1,7 @@
 Install the helper:
 
 ```bash
-npm i helper-moment --save-dev
+npm i handlebars-helper-moment --save-dev
 ```
 
 Now add the helper to Assemble's options:
@@ -10,7 +10,7 @@ Now add the helper to Assemble's options:
 assemble: {
   options: {
     // Assemble will automatically resolve the path
-    helpers: ['helper-moment', 'foo/*.js']
+    helpers: ['handlebars-helper-moment', 'foo/*.js']
   }
 }
 ```
