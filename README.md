@@ -1,4 +1,4 @@
-# \{{moment}} [![NPM version](https://badge.fury.io/js/helper-moment.png)](http://badge.fury.io/js/helper-moment) 
+# \{{moment}} [![NPM version](https://badge.fury.io/js/handlebars-helper-moment.png)](http://badge.fury.io/js/handlebars-helper-moment) 
 
 > A helper to master time! Combining the powers of Assemble, Handlebars.js and Moment.js. This helper leverages Moment.js to provide ultimate control over manipulating time and dates in your templates.
 
@@ -6,7 +6,7 @@
 Install the helper:
 
 ```bash
-npm i helper-moment --save-dev
+npm i handlebars-helper-moment --save-dev
 ```
 
 Now add the helper to Assemble's options:
@@ -15,10 +15,11 @@ Now add the helper to Assemble's options:
 assemble: {
   options: {
     // Assemble will automatically resolve the path
-    helpers: ['helper-moment', 'foo/*.js']
+    helpers: ['handlebars-helper-moment', 'foo/*.js']
   }
 }
 ```
+
 
 
 ## Options
@@ -348,7 +349,7 @@ Released under the MIT license
 
 ***
 
-_This file was generated on Saturday, October 19, 2013._
+_This file was generated on Monday, October 21, 2013._
 
 [moment]: http://momentjs.com/docs/ "Moment.js"
 [grunt]: http://gruntjs.com "Grunt.js"
