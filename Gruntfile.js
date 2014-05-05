@@ -51,7 +51,7 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-readme');
-  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-assemble');
 
   grunt.registerTask('default', ['jshint', 'assemble', 'readme']);
 };

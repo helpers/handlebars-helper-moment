@@ -26,10 +26,10 @@
     "lodash": "~2.2.1"
   },
   "devDependencies": {
-    "assemble": "~0.4.12",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0",
-    "grunt-readme": "~0.1.9"
+    "grunt-readme": "~0.1.9",
+    "grunt-assemble": "^0.1.13"
   },
   "keywords": [
     "assemble",

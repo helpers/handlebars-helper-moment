@@ -344,12 +344,12 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 + [github.com/Arkkimaagi](https://github.com/Arkkimaagi)
 
 ## License
-Copyright (c) 2013 Mikko Tapionlinna, contributors.
+Copyright (c) 2014 Mikko Tapionlinna, contributors.
 Released under the MIT license
 
 ***
 
-_This file was generated on Monday, October 21, 2013._
+_This file was generated on Sunday, May 4, 2014._
 
 [moment]: http://momentjs.com/docs/ "Moment.js"
 [grunt]: http://gruntjs.com "Grunt.js"
