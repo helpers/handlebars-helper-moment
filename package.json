@@ -1,6 +1,6 @@
 {
   "name": "handlebars-helper-moment",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A helper to master time! Combining the powers of Assemble, Handlebars.js and Moment.js. This helper leverages Moment.js to provide ultimate control over manipulating time and dates in your templates.",
   "author": {
     "name": "Mikko Tapionlinna",
