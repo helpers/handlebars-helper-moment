@@ -10,12 +10,12 @@
  */
 
 /*jshint node:true */
-module.exports = function (config) {
-  var helpers = {};
+'use strict';
+module.exports.register = function (Handlebars, options, params) {
   var moment  = require('moment');
   var _       = require('lodash');
 
-  helpers.moment = function(context, block) {
+  Handlebars.registerHelper('moment', function (context, block) {
     if (context && context.hash) {
       block = _.cloneDeep(context);
       context = undefined;
@@ -33,9 +33,9 @@ module.exports = function (config) {
       }
     }
     return date;
-  };
+  });
 
-  helpers.duration = function(context, block) {
+  Handlebars.registerHelper('duration', function (context, block) {
     if (context && context.hash) {
       block = _.cloneDeep(context);
       context = 0;
@@ -53,7 +53,5 @@ module.exports = function (config) {
       }
     }
     return duration;
-  };
-
-  return helpers;
+  });
 };
