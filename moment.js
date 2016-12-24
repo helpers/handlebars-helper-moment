@@ -12,7 +12,7 @@
 /*jshint node:true */
 'use strict';
 module.exports.register = function (Handlebars, options, params) {
-  var moment  = require('moment');
+  var moment  = require('moment-timezone');
   var _       = require('lodash');
 
   Handlebars.registerHelper('moment', function (context, block) {
@@ -21,6 +21,11 @@ module.exports.register = function (Handlebars, options, params) {
       context = undefined;
     }
     var date = moment(context);
+    
+    if (block.hash.timezone){
+      date.tz(block.hash.timezone);
+    }
+
     var hasFormat = false;
 
     // Reset the language back to default before doing anything else
