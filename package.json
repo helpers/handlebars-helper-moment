@@ -22,14 +22,14 @@
     }
   ],
   "dependencies": {
-    "moment": "~2.0.0",
-    "lodash": "~2.2.1"
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "~2.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-assemble": "^0.1.13",
     "grunt-contrib-jshint": "~0.6.0",
-    "grunt-readme": "~0.1.9",
-    "grunt-assemble": "^0.1.13"
+    "grunt-readme": "~0.1.9"
   },
   "keywords": [
     "assemble",
